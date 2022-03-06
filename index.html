@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Low Ploy Demo</title>
+    <script src="https://use.fontawesome.com/419c713afb.js"></script>
+    <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
+    <script src="https://unpkg.com/resize-observer-polyfill@1.5.0/dist/ResizeObserver.js"></script>
+    <style>
+        body{
+            background-color: royalblue;
+            color: black;
+            padding-top: 60px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <model-viewer src="./scene.glb"
+        ios-src="Bronze_Moses_at_Augustana_University.usdz"
+        poster="./Models/Posters/fish.webp"
+        alt="A 3D model of an chinese coin"
+        shadow-intensity="1"
+        camera-controls
+        auto-rotate ar-placement="floor" ar ar-modes="scene-viewer quick-look">
+      </model-viewer>                  
+      <section class="attribution">
+        <span class="desc">
+            <h2>Low Poly Demo - Astronaut</h1>
+            <p></p>
+        </span>
+      </section> 
+    </center>
+
+<!-- Loads <model-viewer> for modern browsers: -->
+    <script type="module"
+    src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+  </script>
+  
+  <!-- Loads <model-viewer> for old browsers like IE11: -->
+  <script nomodule
+    src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
+  </script>
+</body>
+</html>
